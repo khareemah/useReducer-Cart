@@ -27,7 +27,7 @@ const reducer = (state, action) => {
       cart: newCart,
     };
   }
-  if ((action.type = 'DECREASE_ITEM')) {
+  if ((action.type === 'DECREASE_ITEM')) {
     const newCart = state.cart
       .map((cartItem) => {
         if (cartItem.id === action.payload) {
